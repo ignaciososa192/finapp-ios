@@ -1,0 +1,52 @@
+// Common
+"Next" = "Next";
+"Skip" = "Skip";
+"Done" = "Done";
+"Cancel" = "Cancel";
+"OK" = "OK";
+"Error" = "Error";
+
+// Onboarding
+"Welcome to FinApp" = "Welcome to FinApp";
+"Take control of your finances with our intuitive app. Manage your money, track expenses, and achieve your financial goals." = "Take control of your finances with our intuitive app. Manage your money, track expenses, and achieve your financial goals.";
+"No more bank visits" = "No more bank visits";
+"Manage your finances from anywhere, anytime. Our app puts the power of banking in your pocket, eliminating the need for branch visits." = "Manage your finances from anywhere, anytime. Our app puts the power of banking in your pocket, eliminating the need for branch visits.";
+"Experience seamless financial management" = "Experience seamless financial management";
+"All your financial needs in one place. Track spending, set budgets, and grow your savings with ease." = "All your financial needs in one place. Track spending, set budgets, and grow your savings with ease.";
+
+// Login
+"Welcome back" = "Welcome back";
+"Username" = "Username";
+"Password" = "Password";
+"Forgot Password?" = "Forgot Password?";
+"Login" = "Login";
+"or continue with" = "or continue with";
+"Login with Google" = "Login with Google";
+"Login with Apple" = "Login with Apple";
+"Don't have an account?" = "Don't have an account?";
+"Register" = "Register";
+
+// Dashboard
+"Welcome back," = "Welcome back,";
+"Total Balance" = "Total Balance";
+"Income" = "Income";
+"Expense" = "Expense";
+"Transfer" = "Transfer";
+"Scan" = "Scan";
+"Top Up" = "Top Up";
+"Stats" = "Stats";
+"Recent Transactions" = "Recent Transactions";
+"See All" = "See All";
+"No transactions yet" = "No transactions yet";
+
+// Tab Bar
+"Home" = "Home";
+"Transactions" = "Transactions";
+"Cards" = "Cards";
+"Profile" = "Profile";
+
+// Errors
+"Username is required" = "Username is required";
+"Password is required" = "Password is required";
+"Password must be at least 6 characters" = "Password must be at least 6 characters";
+"Invalid username or password" = "Invalid username or password";

@@ -1,14 +1,7 @@
-//
-//  finapp_iosApp.swift
-//  finapp-ios
-//
-//  Created by Ignacio Sosa on 05/07/2025.
-//
-
 import SwiftUI
 
 @main
-struct finapp_iosApp: App {
+struct FinApp: App {
     // App state
     @StateObject private var appState = AppState()
     @StateObject private var viewModel = AppViewModel()
@@ -36,7 +29,10 @@ struct finapp_iosApp: App {
             }
             .animation(.easeInOut, value: hasCompletedOnboarding)
             .animation(.easeInOut, value: isLoggedIn)
-            .onAppear(perform: configureAppearance)
+            .onAppear {
+                // Configure app appearance
+                configureAppearance()
+            }
         }
     }
     
@@ -104,6 +100,10 @@ final class AppViewModel: ObservableObject {
     @Published var transactions: [Transaction] = []
     @Published var cards: [Card] = []
     
+    // Add your service dependencies here
+    // private let apiService: APIService
+    // private let authService: AuthService
+    
     func loadInitialData() async {
         // Load initial app data
         await withTaskGroup(of: Void.self) { group in
@@ -114,10 +114,12 @@ final class AppViewModel: ObservableObject {
     
     private func loadTransactions() async {
         // Implement transaction loading
+        // self.transactions = try? await apiService.fetchTransactions()
     }
     
     private func loadCards() async {
         // Implement cards loading
+        // self.cards = try? await apiService.fetchCards()
     }
 }
 
@@ -141,4 +143,11 @@ enum Tab: String, CaseIterable, Identifiable {
         case .profile: return "Profile"
         }
     }
+}
+
+// MARK: - Preview
+
+#Preview {
+    FinApp()
+}
 }
